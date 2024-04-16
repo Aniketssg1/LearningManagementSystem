@@ -1,26 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <Header />
+    <br>
+    <ExamDescription />
+    <br>
+    <StudentInformation />
+    <br>
+    <MCQQuestions />
+    <br>
+    <TrueOrFalseQuestions />
+    <br>
+    <NumericalQuestions />
+    <br>
+    <DescriptiveQuestions />
+    <br>
+    <SubmitExam />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue';
+import ExamDescription from './components/ExamDescription.vue';
+import StudentInformation from './components/StudentInformation.vue';
+import MCQQuestions from './components/MCQQuestions.vue';
+import DescriptiveQuestions from './components/DescriptiveQuestions.vue';
+import TrueOrFalseQuestions from './components/TrueOrFalseQuestions.vue';
+import NumericalQuestions from './components/NumericalQuestions.vue';
+import SubmitExam from './components/SubmitExam.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    Header,
+    ExamDescription,
+    StudentInformation,
+    MCQQuestions,
+    DescriptiveQuestions,
+    TrueOrFalseQuestions,
+    NumericalQuestions,
+    SubmitExam
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  /* font-family: Arial, sans-serif; */
+  margin: 10px;
 }
 </style>
